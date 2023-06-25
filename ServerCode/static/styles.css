@@ -1,0 +1,95 @@
+body {
+    background: rgb(13, 32, 51);
+    font-family: "Arial"
+}
+#title {
+    color: rgb(63, 200, 244);
+    font-size: 60px;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.data-container {
+    flex: 1;
+    max-width: 48%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.value-box {
+    width: auto;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: rgb(21, 41, 61);
+    display: flex;
+    justify-content: flex-start
+}
+.value-icon {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+.fa-myXl {
+    font-size: 7em;
+    line-height: 0.03125em;
+    vertical-align: -0.1875em; 
+}
+.value-display {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.value-title {
+    width: auto;   
+    height: auto;
+    margin: 0px;
+    padding: 0px
+}
+.value {
+    width: auto;   
+    height: auto;
+    margin: 0px;
+    padding: 0px
+}
+#temperature-title{
+    color: rgb(239, 71, 133);
+    font-size: 25px;
+}
+#temperature-value{
+    color: rgb(239, 71, 133);
+    font-size: 70px;
+    position: relative;
+    bottom: 70px;
+}
+#humidity-title{
+    color: rgb(23, 234, 137);
+    font-size: 25px;
+}
+#humidity-value {
+    color: rgb(23, 234, 137);
+    font-size: 70px;
+    position: relative;
+    bottom: 70px;
+}
+.chart-box {
+    width: 580px;   
+    height: 410px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: rgb(21, 41, 61);
+    text-align: center
+}

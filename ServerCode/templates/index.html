@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monitoring</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="static/icon/css/all.css">
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1 id="title">
+        <center> ENVIROMENTAL MONITORING </center>
+    </h1>
+    <div id="container">
+        <div class="data-container">
+            <div class="value-box">
+                <div class="value-icon">
+                    <i class="fa-solid fa-temperature-three-quarters fa-beat-fade fa-myXl"
+                        style="color: rgb(239, 71, 133);"></i>
+                </div>
+                <div class="value-display">
+                    <div class="value-title">
+                        <h2 id="temperature-title">TEMPERATURE</h2>
+                    </div>
+                    <div class="value">
+                        <h2 id="temperature-value"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-box">
+                <canvas id="temperature-chart"></canvas>
+            </div>
+        </div>
+        <div class="data-container">
+            <div class="value-box">
+                <div class="value-icon">
+                    <i class="fas fa-tint fa-beat-fade fa-myXl" style="color: rgb(23, 234, 137);"></i>
+                </div>
+                <div class="value-display">
+                    <div class="value-title">
+                        <h2 id="humidity-title">HUMIDITY</h2>
+                    </div>
+                    <div class="value">
+                        <h2 id="humidity-value"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-box">
+                <canvas id="humidity-chart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
